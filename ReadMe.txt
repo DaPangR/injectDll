@@ -1,41 +1,8 @@
-========================================================================
-       DYNAMIC LINK LIBRARY : injectDll
-========================================================================
-
-
-AppWizard has created this injectDll DLL for you.  
-
-This file contains a summary of what you will find in each of the files that
-make up your injectDll application.
-
-injectDll.dsp
-    This file (the project file) contains information at the project level and
-    is used to build a single project or subproject. Other users can share the
-    project (.dsp) file, but they should export the makefiles locally.
-
-injectDll.cpp
-    This is the main DLL source file.
-
-	When created, this DLL does not export any symbols. As a result, it 
-	will not produce a .lib file when it is built. If you wish this project
-	to be a project dependency of some other project, you will either need to 
-	add code to export some symbols from the DLL so that an export library 
-	will be produced, or you can check the "doesn't produce lib" checkbox in 
-	the Linker settings page for this project. 
-
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
-
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named injectDll.pch and a precompiled types file named StdAfx.obj.
-
-
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
-
-AppWizard uses "TODO:" to indicate parts of the source code you
-should add to or customize.
-
-
-/////////////////////////////////////////////////////////////////////////////
+#injectDll
+##说明
+一个可以被注入执行的DLL文件
+使用进程注入工具注入宿主进程后，可以显示宿主进程的内存信息
+注入工具可以使用这个：[injector工具下载](http://down.uzzf.com//jxl/DllInjector_Installer.zip)
+##缺陷
+目前只能搜索从0x0040A000开始，长度为1FF0的内存信息
+如果要修改地址范围，只能从代码中修改在重新编译使用
