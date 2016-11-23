@@ -1,0 +1,8 @@
+*.ncb
+*.opt
+*.plg
+Debug/*.ink
+Debug/*.obj
+Debug/*.pch
+Debug/*.pdb
+Debug/*.idb
